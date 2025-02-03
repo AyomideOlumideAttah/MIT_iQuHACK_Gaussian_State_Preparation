@@ -10,19 +10,23 @@ This project leverages Classiq's quantum computing SDK to implement a Gaussian s
 ## Target State: The Gaussian State Representation
 The Gaussian state is defined as:
 
+$
 \[
 |x_0\rangle_N = |0\rangle_N \longrightarrow \sum_{|x\rangle_N} \sqrt{G(x)} |x\rangle_N
 \]
+$
 
-Where \( G(x) \) is represented as a vector:
+Where $\( G(x) \)$ is represented as a vector:
 
+$
 \[
 {G}(x_i) = \frac{\exp(-\lambda \cdot {x_i}^2)}{\sum_{x' \in \text{domain}} \exp(-\lambda \cdot (x')^2)} \text{, for } x_i \in \text{domain}
 \]
+$
 
-- \( G(x) \) is the normalized Gaussian vector across the discrete domain.  
-- \( \vec{x} \) represents the set of discrete points in the domain.  
-- \( \lambda \) represents the decay rate, controlled by the variable `EXP_RATE`, which determines the spread of the Gaussian.
+- $\( G(x) \)$ is the normalized Gaussian vector across the discrete domain.  
+- $\( \vec{x} \)$ represents the set of discrete points in the domain.  
+- $\( \lambda \)$ represents the decay rate, controlled by the variable `EXP_RATE`, which determines the spread of the Gaussian.
 - The denominator ensures normalization across the entire domain.
 
 ## Installation
