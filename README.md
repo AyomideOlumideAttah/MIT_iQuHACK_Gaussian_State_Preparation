@@ -11,17 +11,17 @@ This project leverages Classiq's quantum computing SDK to implement a Gaussian s
 The Gaussian state is defined as:
 
 $$
-\[
+\
 |x_0\rangle_N = |0\rangle_N \longrightarrow \sum_{|x\rangle_N} \sqrt{G(x)} |x\rangle_N
-\]
+\
 $$
 
 Where $\( G(x) \)$ is represented as a vector:
 
 $$
-\[
+\
 {G}(x_i) = \frac{\exp(-\lambda \cdot {x_i}^2)}{\sum_{x' \in \text{domain}} \exp(-\lambda \cdot (x')^2)} \text{, for } x_i \in \text{domain}
-\]
+\
 $$
 
 - $\( G(x) \)$ is the normalized Gaussian vector across the discrete domain.  
@@ -50,7 +50,7 @@ import classiq
 
 Run the Jupyter Notebook to execute the Gaussian state preparation algorithm. The implementation initializes and prepares the quantum system in a Gaussian state within the specified interval.
 
-License
+## License
 
 This project is intended for educational and research purposes. Please ensure compliance with any relevant licensing agreements for the Classiq SDK.
 
