@@ -36,7 +36,7 @@ To use this project, ensure you have the required dependencies installed:
 pip install classiq
 ```
 
-
+---
 ## Authentication
 
 If running for the first time, authenticate with Classiq:
@@ -45,11 +45,19 @@ If running for the first time, authenticate with Classiq:
 import classiq
 # classiq.authenticate()  # Uncomment to authenticate
 ```
-
+---
 ## Running the Code
 
 Run the Jupyter Notebook to execute the Gaussian state preparation algorithm. The implementation initializes and prepares the quantum system in a Gaussian state within the specified interval.
 
+---
+
+### Setting Up the Environment
+
+This project includes a `requirements.txt` file that lists all the Python packages and their versions used in this project. You can use this file to recreate the exact environment required to run the code.
+
+
+---
 ## License
 
 This project is intended for educational and research purposes. Please ensure compliance with any relevant licensing agreements for the Classiq SDK.
